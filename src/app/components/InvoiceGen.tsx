@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import trash from "@/assets/trash.svg";
+import trash from "../../../public/images/trash.svg";
 import Invoice from "@/app/models/Invoice"
 import { GeneratePdfButton } from "./pdfGeneration/genPdfButton";
 

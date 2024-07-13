@@ -1,4 +1,6 @@
 import Invoice from "@/app/models/Invoice";
+import Image from "next/image";
+import BBLogo from "../../../../public/images/bblogo.png"
 
 export const InvoiceTemplate = ({ invoiceData }: { invoiceData: Invoice }) => {
     return (
@@ -6,7 +8,13 @@ export const InvoiceTemplate = ({ invoiceData }: { invoiceData: Invoice }) => {
             {/* Need to add pdf template here */}
 
             <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-                <h1 style={{ textAlign: 'center' }}>Invoice</h1>
+
+                <div className="w-full text-center pb-12">
+                    <Image
+                        src={BBLogo}
+                        alt={"Logo"}
+                    />
+                </div>
 
                 <div style={{ marginBottom: '20px' }}>
                     <strong>Invoice Number:</strong> {invoiceData.invoiceNumber}

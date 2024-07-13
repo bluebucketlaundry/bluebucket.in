@@ -3,7 +3,7 @@
 import { useState } from "react";
 import InvoiceGenerator from "./components/InvoiceGen";
 import Image from "next/image";
-import logo from "@/assets/bblogo.png"
+import logo from "../../public/images/bblogo.png"
 
 
 const Home: React.FC = () => {
